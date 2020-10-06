@@ -1,9 +1,16 @@
 {
   "name": "is-older",
   "version": "0.1.0",
+  "homepage": "https://github.com/darkcode01/is-older",
   "description": "Knows if is older or not by the birthday date.",
   "main": "index.js",
-  "dependencies": {},
+  "files": [
+    "index.js"
+  ],
+  "repository": "darkcode01/is-older",
+  "bugs": {
+    "url": "https://github.com/darkcode01/is-older/issues"
+  },
   "devDependencies": {
     "mocha": "^8.1.3"
   },
