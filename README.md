@@ -1,3 +1,5 @@
+![NPM](https://github.com/DarkCode01/is-adult/workflows/Node.js%20Package/badge.svg?branch=main)
+
 > is-adult is a simple library to Knows if is older or not by the birthday date.
 
 
