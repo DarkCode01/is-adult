@@ -1,0 +1,21 @@
+{
+  "name": "is-older",
+  "version": "0.1.0",
+  "description": "Knows if is older or not by the birthday date.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^8.1.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "is-older",
+    "birthday",
+    "number",
+    "list"
+  ],
+  "author": "Jose Segura (darkcode01)",
+  "license": "MIT"
+}
