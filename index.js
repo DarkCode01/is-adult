@@ -8,6 +8,10 @@
 'use strict';
 
 module.exports = function isOlder(day, month, year, options={ olderNumber: 18 }) {
+  day = Math.abs(day);
+  month = Math.abs(month);
+  year = Math.abs(year);
+
   if (!Number.isInteger(day) || !Number.isInteger(month) || !Number.isInteger(year)) {
     throw new Error('expected an integer');
   }
