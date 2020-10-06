@@ -7,18 +7,18 @@ or
 Install with [yarn](https://yarnpkg.com/)
 
 ```sh
-$ npm install --save is-adult
+$ npm install --save @darkcode01/is-adult
 ```
 
 ```sh
-$ yarn add is-adult
+$ yarn add @darkcode01/is-adult
 ```
 
 
 ### Usage
 
 ```javascript
-const isAdult = require('is-adult');
+const isAdult = require('@darkcode01/is-adult');
 
 console.log(isAdult(2, 2, 1999)); //=> true
 console.log(isAdult('2', '2', '1999')); //=> true
