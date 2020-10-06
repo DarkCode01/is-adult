@@ -1,5 +1,5 @@
 /*!
- * is-older <https://github.com/darkcode01/is-older>
+ * is-adult <https://github.com/darkcode01/is-adult>
  *
  * Copyright (c) 2020, Jose Segura.
  * Released under the MIT License.
@@ -7,7 +7,7 @@
 
 'use strict';
 
-module.exports = function isOlder(day, month, year, options={ olderNumber: 18 }) {
+module.exports = function isAdult(day, month, year, options={ olderNumber: 18 }) {
   day = Math.abs(day);
   month = Math.abs(month);
   year = Math.abs(year);

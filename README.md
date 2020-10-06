@@ -1,4 +1,4 @@
-> is-older is a simple library to Knows if is older or not by the birthday date.
+> is-adult is a simple library to Knows if is older or not by the birthday date.
 
 
 ### Install
@@ -7,27 +7,27 @@ or
 Install with [yarn](https://yarnpkg.com/)
 
 ```sh
-$ npm install --save is-older
+$ npm install --save is-adult
 ```
 
 ```sh
-$ yarn add is-older
+$ yarn add is-adult
 ```
 
 
 ### Usage
 
 ```javascript
-const isOlder = require('is-older');
+const isAdult = require('is-adult');
 
-console.log(isOlder(2, 2, 1999)); //=> true
-console.log(isOlder('2', '2', '1999')); //=> true
+console.log(isAdult(2, 2, 1999)); //=> true
+console.log(isAdult('2', '2', '1999')); //=> true
 
-console.log(isOlder(2, 8, 2010)); //=> false
-console.log(isOlder('3', '3', '2010')); //=> false
+console.log(isAdult(2, 8, 2010)); //=> false
+console.log(isAdult('3', '3', '2010')); //=> false
 
-console.log(isOlder(NaN, '9', '2000')); //=> Uncaught Error: expected an integer
-console.log(isOlder(NaN, '9', '10000000000000000000000')); //=> Uncaught Error: value exceeds maximum safe integer
+console.log(isAdult(NaN, '9', '2000')); //=> Uncaught Error: expected an integer
+console.log(isAdult(NaN, '9', '10000000000000000000000')); //=> Uncaught Error: value exceeds maximum safe integer
 ```
 
 <center>Enjo it <3</cnter>
