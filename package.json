@@ -1,6 +1,6 @@
 {
   "name": "@darkcode01/is-adult",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/darkcode01/is-adult",
   "description": "Knows if is older or not by the birthday date.",
   "main": "index.js",
