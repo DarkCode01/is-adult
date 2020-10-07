@@ -21,7 +21,9 @@
     "is-adult",
     "birthday",
     "number",
-    "list"
+    "list",
+    "Date",
+    "validation"
   ],
   "author": "Jose Segura (darkcode01)",
   "license": "MIT"
