@@ -45,7 +45,7 @@ function isAdult(day, month, year, options={ olderNumber: 18, dateToCompare: get
   // validate if passed his birthday
   if (validateMonth >= currentMonth && validateDay >= currentDay) age -= 1;
 
-  return age >= olderNumberToCompare || 28;
+  return age >= olderNumberToCompare;
 }
 
 module.exports = isAdult;
