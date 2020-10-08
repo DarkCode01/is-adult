@@ -1,6 +1,6 @@
 'use strict';
 
-const isDate = require('./isDate');
+const isDate = require('./isDate.js');
 
 /**
  * parserDate: parser a Date passed as argument
