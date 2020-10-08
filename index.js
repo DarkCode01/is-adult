@@ -7,8 +7,8 @@
 
 'use strict';
 
-const isDate = require('./utils/isDate');
-const parserDate = require('./utils/parserDate');
+const isDate = require('./utils/isDate.js');
+const parserDate = require('./utils/parserDate.js');
 
 /**
  * Function to validate is a Date is adult.
