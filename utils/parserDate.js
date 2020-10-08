@@ -1,5 +1,7 @@
 'use strict';
 
+const isDate = require('./isDate');
+
 /**
  * parserDate: parser a Date passed as argument
  * if not pass a Date return a currentDate.
@@ -13,5 +15,9 @@
  *     getCurrentDate()  //=> [7, 10, 2020]
  */
 module.exports = function parserDate(date=new Date()) {
-  return [ date.getDate(), date.getMonth(), date.getFullYear() ];
+  if (!isDate(date)) {
+    throw new Error('expected an Date value');
+  }
+
+  return [ date.getDate(), date.getMonth() + 1, date.getFullYear() ];
 }
