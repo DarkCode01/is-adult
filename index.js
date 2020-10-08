@@ -7,7 +7,8 @@
 
 'use strict';
 
-const getCurrentDate = require('./utils/currentDate');
+const isDate = require('./utils/isDate');
+const parserDate = require('./utils/parserDate');
 
 /**
  * Function to validate is a Date is adult.
@@ -22,15 +23,15 @@ const getCurrentDate = require('./utils/currentDate');
  *
  *     isAdult(1, 1, 1998)  //=> true
  */
-function isAdult(day, month, year, options={ olderNumber: 18, dateToCompare: getCurrentDate() }) {
-  // parser options
-  const olderNumberToCompare = options.olderNumber || 18;
-  const [currentDay, currentMonth, currentYear] = options.dateToCompare || getCurrentDate();
+function isAdult(day, month, year, options={ olderNumber: 18, dateToCompare: parserDate() }) {
+  if (isDate(options.dateToCompare)) options.dateToCompare = parserDate(options.dateToCompare);
 
-  // parsing dates
+  // parsing dates && options
   const validateDay = Math.abs(day);
-  const validateMonth = Math.abs(month);
+  const validateMonth = Math.abs(month) - 1;
   const validateYear = Math.abs(year);
+  const olderNumberToCompare = options.olderNumber || 18;
+  const [currentDay, currentMonth, currentYear] = options.dateToCompare || parserDate();
 
   // validating date
   if (!Number.isInteger(validateDay) || !Number.isInteger(validateMonth) || !Number.isInteger(validateYear)) {
